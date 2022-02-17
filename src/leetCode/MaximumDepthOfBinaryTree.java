@@ -27,8 +27,7 @@ public class MaximumDepthOfBinaryTree {
         for (int i = 0; i < testData.length; i++) {
             testData[i] = i + 1;
         }
-        TreeNode tr = new TreeNode();
-        TreeNode btree = tr.creat(testData);
+        TreeNode btree = TreeNode.creatByArray(testData);
         System.out.println("DFS START");
         long startTime = System.currentTimeMillis(); // 獲取開始時間
         System.out.println("DFS RESULT : " + maxDepthInDfs(btree, 0) + "'s STEP");

@@ -11,8 +11,8 @@ public class SymmetricTree {
         int[] testData2 = new int[] { 1, 2, 2, 2, 0, 2 };
         int[] testData3 = new int[] { 5, 4, 1, 0, 1, 0, 4, 2, 0, 2, 0 };
         int[] testData4 = new int[] { 1, 2, 2, 3, 4, 4, 3 };
-        TreeNode tr = new TreeNode();
-        TreeNode btree = tr.creat(testData4);
+
+        TreeNode btree = TreeNode.creatByArray(testData4);
         System.out.println(isSymmetric(btree));
     }
 
